@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 
 /**
+ * Set the env variables in development
+ */
+
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config();
+}
+
+/**
  * Module dependencies.
  */
 
